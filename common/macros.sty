@@ -10,20 +10,21 @@
 \usepackage{booktabs}
 \usepackage{hyperref}
 
-% Math shortcuts
-\newcommand{\E}{\mathbb{E}}
-\newcommand{\Var}{\operatorname{Var}}
-\newcommand{\Cov}{\operatorname{Cov}}
-\newcommand{\R}{\mathbb{R}}
-
-% Macroecon specific
-\newcommand{\Y}{\mathit{Y}}
-\newcommand{\C}{\mathit{C}}
-\newcommand{\I}{\mathit{I}}
-\newcommand{\G}{\mathit{G}}
-
-% Theorem styles (for notes)
-\newtheorem{definition}{Definition}
-\newtheorem{proposition}{Proposition}
-\newtheorem{example}{Example}
+% Lecture Slides Cover
+\newcommand{\lecturecover}[2]{%
+  % #1 = lecture number, #2 = lecture title
+  \begin{frame}[plain]
+    \centering
+    {\Large \coursename\par}
+    {\Large \coursecode\par}
+    \vfill
+    {\Huge Lecture #1\par}
+    \bigskip
+    {\LARGE #2\par}
+    \vfill
+    {\large \instructor\par}
+    {\large \institution \par}
+    {\large \semester\par}
+  \end{frame}
+}
 
